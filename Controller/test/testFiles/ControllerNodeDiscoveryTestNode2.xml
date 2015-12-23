@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <node id="0x1234567890abcd" status="ACTIVE" lastSeen="1204130202026" type="ZIGBEE">
+    <name>Unknown Node</name>
+    <synetId>0xabcd</synetId>
+    <manufacturer>0x1234</manufacturer>
+    <revision>0x0002</revision>
+    <profile>0x0002</profile>
+    <addr16>0xf1d7</addr16>
+  <actions>
+    <action id="0xf14e" name="FadeLights" description="" returnType="VOID">
+      <parameter id="0xe526" name="Red" dataType="WORD" validationType="UNSIGNED_RANGE" minValue="0x0" maxValue="0xfff" maxStringLen="0x0"/>
+      <parameter id="0xea8" name="Green" dataType="WORD" validationType="UNSIGNED_RANGE" minValue="0x0" maxValue="0xfff" maxStringLen="0x0"/>
+      <parameter id="0x28b0" name="Blue" dataType="WORD" validationType="UNSIGNED_RANGE" minValue="0x0" maxValue="0xfff" maxStringLen="0x0"/>
+    </action>
+    <action id="0x8fd0" name="FadeChannel" description="" returnType="VOID">
+      <parameter id="0x78de" name="Red" dataType="WORD" validationType="UNSIGNED_RANGE" minValue="0x0" maxValue="0xfff" maxStringLen="0x0"/>
+      <parameter id="0xa0e8" name="Green" dataType="WORD" validationType="UNSIGNED_RANGE" minValue="0x0" maxValue="0xfff" maxStringLen="0x0"/>
+      <parameter id="0x65ec" name="Blue" dataType="WORD" validationType="UNSIGNED_RANGE" minValue="0x0" maxValue="0xfff" maxStringLen="0x0"/>
+      <parameter id="0xa46b" name="Channel" dataType="BYTE" validationType="UNSIGNED_RANGE" minValue="0x0" maxValue="0x4" maxStringLen="0x0"/>
+    </action>
+    <action id="0xfc6c" name="FadeNatural" description="" returnType="VOID">
+      <parameter id="0x5589" name="Percentage" dataType="BYTE" validationType="UNSIGNED_RANGE" minValue="0x0" maxValue="0x64" maxStringLen="0x0"/>
+    </action>
+    <action id="0xcea4" name="GetRedValue" description="" returnType="WORD">
+      <parameter id="0x20d" name="Channel" dataType="BYTE" validationType="UNSIGNED_RANGE" minValue="0x0" maxValue="0x4" maxStringLen="0x0"/>
+    </action>
+    <action id="0xc8f" name="GetGreenValue" description="" returnType="WORD">
+      <parameter id="0xaf91" name="Channel" dataType="BYTE" validationType="UNSIGNED_RANGE" minValue="0x0" maxValue="0x4" maxStringLen="0x0"/>
+    </action>
+    <action id="0x74e8" name="GetBlueValue" description="" returnType="WORD">
+      <parameter id="0xb5e2" name="Channel" dataType="BYTE" validationType="UNSIGNED_RANGE" minValue="0x0" maxValue="0x4" maxStringLen="0x0"/>
+    </action>
+    <action id="0x74e9" name="SetFadeTime" description="" returnType="VOID">
+      <parameter id="0xb5e3" name="FadeTime" dataType="WORD" validationType="UNSIGNED_RANGE" minValue="0x0" maxValue="0x2710" maxStringLen="0x0"/>
+    </action>
+  </actions>
+  </node>
